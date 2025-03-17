@@ -1,72 +1,133 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+.logo img {
+    width: 50px;
+}
+
+/* Navigation */
 nav {
+    text-align: center;
     margin-top: 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
-.logo {
-    display: inline-block;
-    margin-right: 10px;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #fda90d;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 40px;
+    padding: 60px 20px;
+    background: url('your-background.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 1.2em;
     text-decoration: none;
-    background-color: #fda90d; /* Yellow */
+    background-color: #fda90d;
     color: #333;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
 }
 
+/* Sections */
 .section {
-    padding: 40px;
-    margin: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
+    padding: 50px 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
     padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fda90d;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
     text-align: center;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -74,4 +135,10 @@ footer {
 
 .social-media a {
     margin: 0 10px;
-    color
+    color: #fda90d;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #fff;
+}
