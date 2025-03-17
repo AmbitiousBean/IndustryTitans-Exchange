@@ -1,13 +1,23 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by SethK</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industry Titans Exchange</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <img src="your-logo.png" alt="Industry Titans Exchange Logo" width="50">
@@ -22,29 +32,28 @@
         </nav>
         <div class="hero">
             <h1>Industry Titans Exchange</h1>
-            <p>We seek a deeper understanding. A new way of seeing and living. In everything we do, we grow together, embracing hardships as opportunities to rise, learn, and evolve.</p>
-            <a href="#membership" class="cta-button">Join the Movement</a>
+            <p>Where Ambition Meets Opportunity</p>
+            <a href="#membership" class="cta-button">Apply for Membership</a>
         </div>
     </header>
 
     <section id="about" class="section">
-        <h2>Who We Are</h2>
-        <p>The Industry Titans Exchange is a community where ambition meets opportunity. We unite entrepreneurs, industry leaders, and visionaries to create an environment of growth, learning, and success.</p>
+        <h2>Welcome to the Industry Titans Exchange!</h2>
+        <p>Are you an aspiring entrepreneur looking to delve deep into specific industries and gain valuable insights from the best in the business? Look no further. The Industry Titans Exchange is an exclusive community tailored for individuals with a passion for learning, growing, and connecting with industry leaders.</p>
+        <!-- Add more content from the overview -->
     </section>
 
     <section id="why-choose-us" class="section">
-        <h2>Why Industry Titans Exchange?</h2>
-        <p>We are more than just a network—we are a movement. Our core values drive us:</p>
-        <ul>
-            <li><strong>Growth:</strong> Every challenge is an opportunity.</li>
-            <li><strong>Authenticity:</strong> True connections lead to true success.</li>
-            <li><strong>Innovation:</strong> We redefine what's possible.</li>
-        </ul>
+        <h2>Why Choose Industry Titans Exchange</h2>
+        <p>Serious Ambition, Strategic Networking, Exclusive Opportunities, Expert Insight, Results-Driven Community - Join us for a transformative journey toward industry mastery and entrepreneurial success.</p>
+        <!-- Add more content from the "Why Choose Us" section -->
     </section>
 
     <section id="membership" class="section">
         <h2>Apply for Membership</h2>
+        <p>Join our community and embark on a transformative journey toward industry mastery and entrepreneurial success. Apply for membership today and unlock a world of possibilities.</p>
         <form action="#" method="post">
+            <!-- Add form fields for applying for membership -->
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -53,13 +62,33 @@
         </form>
     </section>
 
+    <section id="subscription" class="section">
+        <h2>Monthly Subscription Service</h2>
+        <p>Consider our premium monthly subscription service to access exclusive benefits and create a recurring revenue stream for I.T.E.</p>
+        <!-- Add more content from the Monthly Subscription Service section -->
+    </section>
+
     <footer>
         <div class="social-media">
+            <!-- Add your social media links here -->
             <a href="#" target="_blank">Facebook</a>
             <a href="#" target="_blank">Twitter</a>
             <a href="#" target="_blank">LinkedIn</a>
         </div>
         <p>&copy; <span id="current-year"></span> Industry Titans Exchange</p>
+
+        <script>
+            // Dynamic year in the footer
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.getElementById('current-year');
+            yearElement.textContent = currentYear;
+        </script>
     </footer>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
